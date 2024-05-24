@@ -10,6 +10,7 @@ public class Client {
         student.rollNumber=1;
         student.name="Sai Teja";
         student.psp=94.5;
+        student.batch_id=1;
         Student student1=new Student();
         student1.rollNumber=2;
         student1.name="Abhilash";
@@ -21,10 +22,10 @@ public class Client {
 
         student.chnageBatch(1);
         student.attendClass();
-
         student1.pauseCourse();
         student1=student;
         System.out.println(student);
         System.out.println(student1);
+
     }
 }
