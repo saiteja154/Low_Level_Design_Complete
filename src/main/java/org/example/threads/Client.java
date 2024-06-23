@@ -18,6 +18,7 @@ public class Client {
         Thread t1=new Thread(task1);
         t1.start();
 
+
         //New Thread with another task.
         PrintNumber task2=new PrintNumber(30);
         Thread t2=new Thread(task2);
@@ -28,7 +29,6 @@ public class Client {
 
         //Printing 1 to 100 using 100 different threads;
         for(int i=1;i<=100;i++){
-
             PrintingOneToHundredUsingHundredDifferentThreads task3=new PrintingOneToHundredUsingHundredDifferentThreads(i);
             Thread t3=new Thread(task3);
             t3.start();
