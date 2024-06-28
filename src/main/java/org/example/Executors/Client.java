@@ -6,6 +6,7 @@ import java.util.concurrent.Executors;
 
 public class Client {
     public static void main(String ars[]){
+
        ExecutorService ex= Executors.newFixedThreadPool(10);
 
        // two types: FixedThredpool , CachedThreadPool.

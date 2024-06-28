@@ -113,5 +113,25 @@ public class Client {
         }
 
 
+        System.out.println("\n Comparable Sorting");
+
+        /*
+
+        Comparable Person Class
+         */
+
+        List<Person> people = new ArrayList<>();
+        people.add(new Person("Alice", 30));
+        people.add(new Person("Bob", 25));
+        people.add(new Person("Charlie", 35));
+
+        // Sort the list using the natural ordering defined by compareTo
+        Collections.sort(people);
+
+        // Print the sorted list
+        for (Person person : people) {
+            System.out.println(person);
+        }
+
     }
 }
